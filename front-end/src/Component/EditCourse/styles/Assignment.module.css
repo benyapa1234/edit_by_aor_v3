@@ -1,0 +1,154 @@
+.filter_container {
+  display: grid;
+  width: 20%;
+  margin-right: 50px;
+}
+
+.container {
+  display: flex;
+}
+
+.selector {
+  padding: 6px 20px;
+}
+
+/* Table */
+.table_body_wrapper {
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+/* ให้ table scroll ได้ถ้าแนวนอนยาวเกิน */
+.table_scroll_container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+/* ปรับให้ตารางดูดีขึ้น */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+.column_table {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn_wrap {
+  display: flex;
+  margin: 0;
+}
+
+/* ---------- Popup Modal ------------- */
+.modal_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 500px;
+
+  max-height: 90vh; /* ป้องกันเกินจอ */
+  overflow-y: auto; /* scroll เฉพาะ modal */
+}
+
+.modal_title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input_text_section {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input_label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input_field {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button_group {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal_save_btn {
+  padding: 8px 20px;
+  background-color: #0d6efd;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal_close_btn {
+  padding: 8px 20px;
+  background-color: #6c757d;
+  color: white;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal_save_btn:hover,
+.modal_close_btn:hover {
+  opacity: 0.9;
+}
+
+.btn_submit {
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: white;
+  margin: 10px;
+}
+
+.btn_other {
+  padding: 10px 20px;
+  background-color: greenyellow;
+  color: white;
+}
+
+.btn_delete {
+  padding: 10px 20px;
+  background-color: red;
+  color: white;
+}

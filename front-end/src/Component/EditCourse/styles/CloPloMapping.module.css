@@ -1,0 +1,56 @@
+.container {
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.selector {
+  margin-bottom: 20px;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.mappingTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.mappingTable th,
+.mappingTable td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.mappingTable th {
+  background-color: #f2f2f2;
+}
+
+.mappingCell {
+  min-width: 100px;
+}
+
+.weightInput {
+  width: 50px;
+  margin-left: 5px;
+}
+
+.submitWrapper {
+  text-align: right;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}

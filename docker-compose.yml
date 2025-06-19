@@ -1,0 +1,24 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: PLOCO_database
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: react_ploclo
+      MYSQL_USER: test
+      MYSQL_PASSWORD: 123456
+      # เพิ่มตัวแปร charset และ collation
+      MYSQL_INITDB_SKIP_TZINFO: 1
+    ports:
+      - "3308:3306"
+    volumes:
+      - ./migration/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysql-data:/var/lib/mysql
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+      - --explicit-defaults-for-timestamp
+
+volumes:
+  mysql-data:

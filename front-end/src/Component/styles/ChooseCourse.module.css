@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  margin-bottom: 15px;
+}
+
+.selector {
+  width: 300px;
+  padding: 5px;
+}
